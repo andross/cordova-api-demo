@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-    <widget xmlns = "http://www.w3.org/ns/widgets"
+<widget xmlns = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "com.andross.cordova_api_demo"
         versionCode="1" 
@@ -16,5 +16,7 @@
     <author href="http://roessland.com" email="andreas.roessland@gmail.com">
         Andreas Røssland
     </author>
+
+    <preference name="orientation" value="portrait" />
 
 </widget>
