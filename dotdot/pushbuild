@@ -1,0 +1,9 @@
+#!/bin/bash
+
+source $(dirname $0)/pushbuild.config
+
+echo Pushing repository to GitHub...
+git push
+
+echo Starting build process...
+curl -X PUT -d 'data={"pull":"true"}' https://build.phonegap.com/api/v1/apps/$PHONEGAP_BUILD_APP_ID?auth_token=$PHONEGAP_BUILD_TOKEN

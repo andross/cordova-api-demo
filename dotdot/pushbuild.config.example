@@ -1,0 +1,5 @@
+# Rename this file to pushbuild.config
+
+# Add your token and app id for command line building
+PHONEGAP_BUILD_TOKEN=ABCDEFGHIJKL
+PHONEGAP_BUILD_APP_ID=123456
