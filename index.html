@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Cordova API Demo</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/topcoat-mobile-light.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="cordova.js"></script>
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="js/vendor/jquery-1.9.1.min.js"></script>
+        <script src="js/vendor/knockout-2.2.1.js"></script>
+    </head>
+    <body>
+
+
+        <!-- HEADER -->
+        <div class="topcoat-navigation-bar">
+            <div class="topcoat-navigation-bar__item center full">
+                <h1 class="topcoat-navigation-bar__title">Cordova API Demo</h1>
+            </div>
+        </div>
+
+        <!-- LIST OF CORDOVA API'S -->
+        <div class="topcoat-list__container">
+
+            <!-- ACCELEROMETER -->
+            <h3 class="topcoat-list__header">Accelerometer</h3>
+            <ul class="topcoat-list">
+                <div class="topcoat-list__item">
+                    <p>Tap into the device's motion sensor.</p>
+                    <p>The accelerometer is a motion sensor that detects the change (delta) in movement relative to the current device orientation. The accelerometer can detect 3D movement along the x, y, and z axis.</p>
+                </div>
+                <div class="topcoat-list__item">
+                    <p data-bind="visible: !deviceready()">Initializing...</p>
+                    <ul data-bind="visible: deviceready()">
+                        <li>X: <span data-bind="text: acceleration().x"></span></li>
+                        <li>Y: <span data-bind="text: acceleration().y"></span></li>
+                        <li>Z: <span data-bind="text: acceleration().z"></span></li>
+                    </ul>
+                </div>
+            </ul>
+
+        </div>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>

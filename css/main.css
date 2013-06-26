@@ -1,0 +1,6 @@
+.topcoat-list__item *:first-child {
+    margin-top: 0;
+}
+.topcoat-list__item *:last-child {
+    margin-bottom: 0;
+}
